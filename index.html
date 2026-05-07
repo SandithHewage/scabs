@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="evan cafe racer — 05.30.2026. scabs group llc.">
+  <title>scabs — evan cafe racer</title>
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <!-- ===================== FRAME ===================== -->
+  <div class="frame">
+
+    <!-- HEADER -->
+    <header class="site-header" role="banner">
+      <a href="" class="site-header__logo-link" aria-label="scabs — home">
+        <img
+          src="assets/logo.webp"
+          alt="SCABS GROUP LLC"
+          class="site-header__logo"
+          decoding="async"
+          loading="eager"
+        >
+      </a>
+    </header>
+
+    <!-- MAIN -->
+    <main id="main-content">
+
+      <!-- HERO -->
+      <section class="hero" aria-label="evan cafe racer event image">
+        <div class="hero__wrap">
+          <img
+            src="assets/ls.jpg"
+            alt="evan cafe racer — sunset blvd"
+            class="hero__image"
+            decoding="async"
+            loading="eager"
+          >
+          <div class="hero__caption hero__caption--left">
+            <span class="hero__caption-title">evan café racer</span>
+            <span class="hero__caption-eyebrow" id="hero-countdown">—</span>
+          </div>
+          <div class="hero__caption hero__caption--right">
+            <span class="hero__caption-title">05.30.2026</span>
+            <span class="hero__caption-eyebrow">11 am pst</span>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
+  </div><!-- /.frame -->
+
+  <!-- ===================== NEWSLETTER ===================== -->
+  <section class="newsletter" aria-label="newsletter signup">
+    <div class="newsletter__inner">
+
+      <div class="newsletter__form-wrap" id="newsletter-form-wrap">
+        <form class="newsletter__form" id="newsletter-form" novalidate aria-label="newsletter signup">
+          <div class="newsletter__field-wrap">
+            <label class="sr-only" for="nl-email">email address</label>
+            <input
+              class="newsletter__input"
+              type="email"
+              id="nl-email"
+              name="email"
+              placeholder="email"
+              autocomplete="email"
+              required
+              aria-required="true"
+            >
+          </div>
+          <div class="newsletter__field-wrap">
+            <label class="sr-only" for="nl-phone">phone number</label>
+            <input
+              class="newsletter__input"
+              type="tel"
+              id="nl-phone"
+              name="phone"
+              placeholder="phone"
+              autocomplete="tel"
+              required
+              aria-required="true"
+            >
+          </div>
+          <button class="newsletter__submit" type="submit">subscribe</button>
+        </form>
+        <p class="newsletter__success" id="newsletter-success" aria-live="polite">thank you.</p>
+      </div>
+
+      <p class="newsletter__legal">by subscribing, you consent to receive email &amp; sms from scabs. consent not required for purchase.<span class="legal-break-desktop"></span> msg &amp; data rates may apply. reply stop to opt out. see our <a href="#" class="newsletter__legal-link" id="privacy-trigger">privacy policy</a>.</p>
+
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="site-footer__inner">
+      <a
+        href="https://www.instagram.com/scabsonline"
+        class="footer-instagram"
+        aria-label="scabs group llc on instagram"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+        </svg>
+      </a>
+      <p class="footer-copy">© scabs group llc. all rights reserved.</p>
+      <button
+        class="footer-contact"
+        id="contact-trigger"
+        type="button"
+        aria-haspopup="dialog"
+      >contact</button>
+    </div>
+  </footer>
+
+  <!-- ===================== MODAL ===================== -->
+  <div class="modal-backdrop" id="modal-backdrop" aria-hidden="true"></div>
+
+  <div
+    class="modal"
+    id="contact-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-heading"
+    aria-hidden="true"
+    tabindex="-1"
+  >
+    <div class="modal__header">
+      <h2 class="modal__heading" id="modal-heading">contact</h2>
+      <button class="modal__close" id="modal-close" aria-label="close contact modal" type="button">✕</button>
+    </div>
+
+    <form class="modal__form" id="contact-form" novalidate>
+      <div class="form-group">
+        <label class="form-label" for="contact-email">email</label>
+        <input
+          class="form-input"
+          type="email"
+          id="contact-email"
+          name="email"
+          required
+          aria-required="true"
+          aria-describedby="contact-email-error"
+        >
+        <span class="form-error" id="contact-email-error" role="alert" aria-live="polite"></span>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="contact-message">message</label>
+        <textarea
+          class="form-input form-input--textarea"
+          id="contact-message"
+          name="message"
+          rows="5"
+          required
+          aria-required="true"
+          aria-describedby="contact-message-error"
+        ></textarea>
+        <span class="form-error" id="contact-message-error" role="alert" aria-live="polite"></span>
+      </div>
+      <button class="modal__submit" type="submit">send</button>
+    </form>
+
+    <div class="modal__success" id="contact-success" hidden aria-live="polite">
+      <p>message sent. we'll be in touch.</p>
+    </div>
+  </div>
+
+  <!-- ===================== PRIVACY POLICY MODAL ===================== -->
+  <div class="modal-backdrop" id="privacy-backdrop" aria-hidden="true"></div>
+
+  <div
+    class="modal modal--policy"
+    id="privacy-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="privacy-heading"
+    aria-hidden="true"
+    tabindex="-1"
+  >
+    <div class="modal__header">
+      <h2 class="modal__heading" id="privacy-heading">scabs online privacy policy</h2>
+      <button class="modal__close" id="privacy-close" aria-label="close privacy policy" type="button">✕</button>
+    </div>
+
+    <p class="policy__effective">effective may 2026</p>
+
+    <div class="policy__body">
+
+      <p class="policy__intro">scabs respects your privacy and is committed to protecting the personal information you share with us. this privacy policy explains how we collect, use, and safeguard your information when you interact with our website or subscribe to our communications. this privacy policy may be updated from time to time. any changes will be posted on this page with an updated effective date. for questions about this privacy policy or our data practices, <a href="#" class="policy__contact-link" id="policy-contact-1">contact us</a>.</p>
+
+      <div class="policy__section">
+        <h3 class="policy__section-heading">information we collect</h3>
+        <p>when you subscribe, we may collect your email address, phone number, country, and related metadata such as the time and source of your submission.</p>
+      </div>
+
+      <div class="policy__section">
+        <h3 class="policy__section-heading">how we use your information</h3>
+        <p>we use your information solely to communicate with you about scabs, including early access, product releases, and brand updates via email and sms.</p>
+      </div>
+
+      <div class="policy__section">
+        <h3 class="policy__section-heading">sms &amp; email communications</h3>
+        <p>by subscribing, you consent to receive email and sms communications from scabs. message and data rates may apply. consent is not required for purchase. you may opt out at any time by replying <strong>stop</strong> to an sms or by following the unsubscribe instructions in our emails.</p>
+      </div>
+
+      <div class="policy__section">
+        <h3 class="policy__section-heading">data sharing</h3>
+        <p>we do not sell your personal information. your data may be shared only with trusted service providers who assist us in operating our communications (such as email or sms delivery services), and only for that purpose. california residents have the right to request access to, deletion of, or information about the personal data we collect. to exercise these rights, you may <a href="#" class="policy__contact-link" id="policy-contact-2">contact us</a>.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
