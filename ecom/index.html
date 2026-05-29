@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="evan cafe racer — 05.30.2026. scabs group.">
+  <title>scabs</title>
+  <meta name="author" content="@sandithxyz">
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================== FRAME ===================== -->
+  <div class="frame">
+
+    <!-- HEADER -->
+    <header class="site-header">
+      <a href="index.html" class="site-header__logo-link" aria-label="scabs — home">
+        <img
+          src="assets/logo.webp"
+          alt="SCABS GROUP"
+          class="site-header__logo"
+          decoding="async"
+          loading="eager"
+        >
+      </a>
+    </header>
+
+    <!-- MAIN -->
+    <main id="main-content" class="ecom-main">
+      <div class="product">
+
+        <!-- GALLERY -->
+        <div class="product__gallery-wrap">
+          <div class="product__gallery" aria-label="product images">
+
+            <div class="gallery__clip">
+            <div class="gallery__track">
+              <img src="assets/gallery/front.webp" alt="evan café racer — front" class="gallery__img" loading="eager" decoding="async">
+              <img src="assets/gallery/back.webp" alt="evan café racer — back" class="gallery__img" loading="lazy" decoding="async">
+              <img src="assets/gallery/waist.webp" alt="evan café racer — waist" class="gallery__img" loading="lazy" decoding="async">
+              <img src="assets/gallery/arm.webp" alt="evan café racer — arm" class="gallery__img" loading="lazy" decoding="async">
+              <img src="assets/gallery/darts.webp" alt="evan café racer — darts" class="gallery__img" loading="lazy" decoding="async">
+            </div>
+            </div>
+
+            <button class="gallery__btn gallery__btn--prev" type="button" aria-label="previous image">
+              <svg width="22" height="13" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M1 1L5 5L9 1"/>
+              </svg>
+            </button>
+            <button class="gallery__btn gallery__btn--next" type="button" aria-label="next image">
+              <svg width="22" height="13" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M1 1L5 5L9 1"/>
+              </svg>
+            </button>
+
+            <div class="gallery__dots" aria-hidden="true"></div>
+
+          </div>
+        </div>
+
+        <!-- DETAILS -->
+        <div class="product__details">
+
+          <div class="product__header">
+            <h1 class="product__title">evan caf&eacute; racer</h1>
+            <span class="product__price">$280</span>
+          </div>
+
+          <div class="product__size-wrap">
+            <p class="product__size-label">size</p>
+            <div class="product__size-options" role="group" aria-label="select size">
+              <input type="radio" name="size" id="size-s" value="s" class="size-input" checked>
+              <label for="size-s" class="size-btn" data-size="S">s</label>
+              <input type="radio" name="size" id="size-m" value="m" class="size-input">
+              <label for="size-m" class="size-btn" data-size="M">m</label>
+              <input type="radio" name="size" id="size-l" value="l" class="size-input">
+              <label for="size-l" class="size-btn" data-size="L">l</label>
+            </div>
+          </div>
+
+          <button class="product__checkout" type="button">checkout</button>
+
+          <div class="product__accordion">
+
+            <!-- DESCRIPTION -->
+            <div class="accordion-item">
+              <button class="accordion-header" type="button" aria-expanded="false">
+                description
+                <span class="accordion-icon" aria-hidden="true">
+                  <svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M1 1L5 5L9 1"/>
+                  </svg>
+                </span>
+              </button>
+              <div class="accordion-body">
+                <div class="accordion-body__inner">
+                  <p class="accordion-text">cut from a 12 oz raw stretch denim, the evan caf&eacute; racer features:</p>
+                  <ul class="accordion-list">
+                    <li>silver hardware</li>
+                    <li>flat-felled seams throughout</li>
+                    <li>darted elbows</li>
+                    <li>front zipper closure</li>
+                    <li>zippered front pockets</li>
+                    <li>zipper vents at the sleeves</li>
+                    <li>back cinches</li>
+                    <li>snap closures at collar, waistband, and cuffs</li>
+                    <li>vegetable tanned cowhide leather patch</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- SIZING -->
+            <div class="accordion-item">
+              <button class="accordion-header" type="button" aria-expanded="false">
+                sizing
+                <span class="accordion-icon" aria-hidden="true">
+                  <svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M1 1L5 5L9 1"/>
+                  </svg>
+                </span>
+              </button>
+              <div class="accordion-body">
+                <div class="accordion-body__inner">
+                <div class="sizing-chart">
+
+                  <div class="sizing-chart__header">
+                    <span class="sizing-chart__label">size chart</span>
+                    <div class="sizing-toggle" role="group" aria-label="unit toggle">
+                      <button class="sizing-toggle__btn is-active" data-unit="in" type="button">in</button>
+                      <button class="sizing-toggle__btn" data-unit="cm" type="button">cm</button>
+                    </div>
+                  </div>
+
+                  <div class="sizing-table-wrap">
+                    <table class="sizing-table">
+                      <thead>
+                        <tr>
+                          <th class="sizing-table__head sizing-table__head--label">size</th>
+                          <th class="sizing-table__head">s</th>
+                          <th class="sizing-table__head">m</th>
+                          <th class="sizing-table__head">l</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="sizing-table__label">chest</td>
+                          <td data-in="20" data-cm="50.8">20</td>
+                          <td data-in="21" data-cm="53.3">21</td>
+                          <td data-in="22" data-cm="55.9">22</td>
+                        </tr>
+                        <tr>
+                          <td class="sizing-table__label">shoulder</td>
+                          <td data-in="17" data-cm="43.2">17</td>
+                          <td data-in="17.5" data-cm="44.5">17.5</td>
+                          <td data-in="18" data-cm="45.7">18</td>
+                        </tr>
+                        <tr>
+                          <td class="sizing-table__label">length</td>
+                          <td data-in="24" data-cm="61.0">24</td>
+                          <td data-in="24.5" data-cm="62.2">24.5</td>
+                          <td data-in="25" data-cm="63.5">25</td>
+                        </tr>
+                        <tr>
+                          <td class="sizing-table__label">sleeve</td>
+                          <td data-in="26.5" data-cm="67.3">26.5</td>
+                          <td data-in="26.75" data-cm="68.0">26.75</td>
+                          <td data-in="27" data-cm="68.6">27</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <button class="sizing-calc-trigger" type="button">SIZE CALCULATOR</button>
+
+                </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SPECIFICATIONS -->
+            <div class="accordion-item">
+              <button class="accordion-header" type="button" aria-expanded="false">
+                specifications
+                <span class="accordion-icon" aria-hidden="true">
+                  <svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M1 1L5 5L9 1"/>
+                  </svg>
+                </span>
+              </button>
+              <div class="accordion-body">
+                <div class="accordion-body__inner">
+                  <dl class="spec-list">
+                    <div class="spec-row">
+                      <dt class="spec-label">composition</dt>
+                      <dd class="spec-value">99% cotton, 1% elastane</dd>
+                    </div>
+                    <div class="spec-row">
+                      <dt class="spec-label">hardware</dt>
+                      <dd class="spec-value">snap and zipper closures in silver</dd>
+                    </div>
+                    <div class="spec-row">
+                      <dt class="spec-label">production</dt>
+                      <dd class="spec-value">made in los angeles, usa</dd>
+                    </div>
+                    <div class="spec-row">
+                      <dt class="spec-label">care</dt>
+                      <dd class="spec-value">hand wash in cold water and air dry. refer to care label for further instructions.</dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+            </div>
+
+            <!-- DELIVERY -->
+            <div class="accordion-item">
+              <button class="accordion-header" type="button" aria-expanded="false">
+                delivery
+                <span class="accordion-icon" aria-hidden="true">
+                  <svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M1 1L5 5L9 1"/>
+                  </svg>
+                </span>
+              </button>
+              <div class="accordion-body">
+                <div class="accordion-body__inner">
+                  <dl class="spec-list">
+                    <div class="spec-row">
+                      <dt class="spec-label">shipping</dt>
+                      <dd class="spec-value">complimentary standard shipping on all u.s. orders, 2–5 days after shipping. same/next day local delivery available within los angeles and orange county.</dd>
+                    </div>
+                    <div class="spec-row">
+                      <dt class="spec-label">returns</dt>
+                      <dd class="spec-value">items received in a defective or damaged condition may be returned within fourteen days of delivery for a full refund. all other sales are final.</dd>
+                    </div>
+                    <div class="spec-row">
+                      <dt class="spec-label">contact</dt>
+                      <dd class="spec-value">for all other inquiries contact <a href="mailto:info@scabs.online" class="accordion-link">info@scabs.online</a></dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /.product__accordion -->
+
+        </div><!-- /.product__details -->
+
+      </div><!-- /.product -->
+    </main>
+
+  </div><!-- /.frame -->
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <a
+        href="https://www.instagram.com/scabsonline"
+        class="footer-instagram"
+        aria-label="scabs group on instagram"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+        </svg>
+      </a>
+      <p class="footer-copy">© 2026 scabs group<span class="footer-copy__rights">. all rights reserved.</span></p>
+    </div>
+  </footer>
+
+  <!-- ===================== SIZE CALCULATOR MODAL ===================== -->
+  <div class="calc-backdrop" id="calc-backdrop" aria-hidden="true"></div>
+
+  <div
+    class="calc-modal"
+    id="calc-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="calc-modal-heading"
+    aria-hidden="true"
+    tabindex="-1"
+  >
+    <div class="calc-modal__header">
+      <h2 class="calc-modal__heading" id="calc-modal-heading">size calculator</h2>
+      <button class="calc-modal__close" id="calc-modal-close" type="button" aria-label="close size calculator">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" aria-hidden="true">
+          <line x1="1" y1="1" x2="11" y2="11"/>
+          <line x1="11" y1="1" x2="1" y2="11"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- STEP 1: HEIGHT + WEIGHT -->
+    <div class="calc-step" id="calc-step-1">
+      <div class="calc-unit-toggle" role="group" aria-label="measurement unit">
+        <button class="calc-unit-btn is-active" data-unit="imperial" type="button">imperial</button>
+        <button class="calc-unit-btn" data-unit="metric" type="button">metric</button>
+      </div>
+
+      <div id="calc-imperial-fields">
+        <div class="calc-field-group">
+          <label class="calc-label" for="calc-ft">height</label>
+          <div class="calc-height-row">
+            <input class="calc-input" type="number" id="calc-ft" placeholder="ft" min="4" max="7">
+            <input class="calc-input" type="number" id="calc-in" placeholder="in" min="0" max="11">
+          </div>
+        </div>
+        <div class="calc-field-group">
+          <label class="calc-label" for="calc-lbs">weight</label>
+          <input class="calc-input" type="number" id="calc-lbs" placeholder="lbs" min="80" max="400">
+        </div>
+        <span class="calc-error" id="calc-imperial-error" role="alert" aria-live="polite"></span>
+      </div>
+
+      <div id="calc-metric-fields" hidden>
+        <div class="calc-field-group">
+          <label class="calc-label" for="calc-cm">height</label>
+          <input class="calc-input" type="number" id="calc-cm" placeholder="cm" min="140" max="220">
+        </div>
+        <div class="calc-field-group">
+          <label class="calc-label" for="calc-kg">weight</label>
+          <input class="calc-input" type="number" id="calc-kg" placeholder="kg" min="40" max="180">
+        </div>
+        <span class="calc-error" id="calc-metric-error" role="alert" aria-live="polite"></span>
+      </div>
+
+      <button class="calc-btn calc-btn--ghost" id="calc-next" type="button">next</button>
+    </div>
+
+    <!-- STEP 2: BODY TYPE -->
+    <div class="calc-step" id="calc-step-2" hidden>
+      <p class="calc-step-label">body type</p>
+      <div class="calc-type-options" role="group" aria-label="select body type">
+        <button class="calc-type-btn" data-type="slim" type="button">
+          <span class="calc-type-name">slim</span>
+          <span class="calc-type-desc">lean frame, minimal mass</span>
+        </button>
+        <button class="calc-type-btn" data-type="regular" type="button">
+          <span class="calc-type-name">regular</span>
+          <span class="calc-type-desc">average proportions</span>
+        </button>
+        <button class="calc-type-btn" data-type="athletic" type="button">
+          <span class="calc-type-name">athletic</span>
+          <span class="calc-type-desc">muscular, active build</span>
+        </button>
+        <button class="calc-type-btn" data-type="broad" type="button">
+          <span class="calc-type-name">broad</span>
+          <span class="calc-type-desc">wider frame, broader shoulders</span>
+        </button>
+      </div>
+      <button class="calc-btn calc-btn--ghost" id="calc-back-2" type="button">back</button>
+    </div>
+
+    <!-- STEP 3: RESULT -->
+    <div class="calc-step" id="calc-step-3" hidden>
+      <p class="calc-step-label">recommended size</p>
+      <p class="calc-result" id="calc-result-size">—</p>
+      <div class="calc-step-actions">
+        <button class="calc-btn calc-btn--primary" id="calc-checkout" type="button">select size</button>
+        <button class="calc-btn calc-btn--ghost" id="calc-back" type="button">back</button>
+      </div>
+    </div>
+
+  </div><!-- /.calc-modal -->
+
+  <!-- ===================== LIGHTBOX ===================== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="image viewer" aria-hidden="true">
+    <button class="lightbox__close" id="lightbox-close" type="button" aria-label="close">
+      <svg width="14" height="14" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" aria-hidden="true">
+        <line x1="1" y1="1" x2="11" y2="11"/>
+        <line x1="11" y1="1" x2="1" y2="11"/>
+      </svg>
+    </button>
+    <div class="lightbox__stage">
+      <div class="lightbox__track"></div>
+    </div>
+    <button class="lightbox__btn lightbox__btn--prev" type="button" aria-label="previous image">
+      <svg width="22" height="13" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M1 1L5 5L9 1"/>
+      </svg>
+    </button>
+    <button class="lightbox__btn lightbox__btn--next" type="button" aria-label="next image">
+      <svg width="22" height="13" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M1 1L5 5L9 1"/>
+      </svg>
+    </button>
+    <div class="lightbox__dots" aria-hidden="true"></div>
+  </div><!-- /.lightbox -->
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
